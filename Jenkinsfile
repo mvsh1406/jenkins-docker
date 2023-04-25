@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t mvsh1406/test:latest .'
+        sh 'docker build -t mvsh1406/test .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push mvsh1406/test:latest'
+        sh 'docker push mvsh1406/test'
       }
     }
   }
