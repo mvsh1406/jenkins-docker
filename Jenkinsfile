@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push mvsh1406/jenkins-docker-hub'
+        sh 'docker push mvsh1406/jenkins-docker-hub:latest'
       }
     }
   }
