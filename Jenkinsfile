@@ -10,6 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t mvsh1406/jenkins .'
+        image = docker:stable
+        privileged = true
       }
     }
     stage('Login') {
