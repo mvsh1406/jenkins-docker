@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t mvsh1406/jenkins .'
+        sh 'docker build -t mvsh1406/jenkins'
       }
     }
     stage('Login') {
