@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t mvsh1406/test https://hub.docker.com/r/mvsh1406/test'
+        sh 'docker build -t mvsh1406/test .'
       }
     }
     stage('Login') {
